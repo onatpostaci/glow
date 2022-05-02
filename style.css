@@ -1,28 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-
+/*BURGER BUTTON FIRST NOT DISPLAYED*/
 #navbarContainer button{
     display: none;
 }
-#listNav{
+
+/*ITEMS ON THE NAVIGATION BAR*/
+#listNav li a{
+    padding: 30px;
     transition: 0.4s;
     transition-timing-function: ease-in-out;
 }
 
+/*BURGER BUTTON BORDER COLOR*/
 #burger{
     border-color:lightpink;
 }
 
+/*BURGER BUTTON UNDER 900PX WILL BE DISPLAYED WHICH ENSURES RESPONSIVENESS*/
 @media only screen and (max-width:900px){
     #navbarContainer button{
         display: block;
     }
+    #listNav li a{
+        padding: 10px;
+    }
 
-    #listNav:hover{
+    #listNav li a:hover{
         color:white;
     }
 
 }
+
+/*BODY WILL HAVE GRADIENT BACKGROUND ANIMATION*/
 body{
     background: linear-gradient(
         to right, #833ab4,
@@ -31,6 +41,7 @@ body{
     animation: animate-background 10s infinite ease-in-out;
 }
 
+/*BODY WILL HAVE GRADIENT BACKGROUND ANIMATION*/
 @keyframes animate-background{
     0%{
         background-position: 0 50%;
@@ -42,6 +53,42 @@ body{
         background-position: 0 50%;
     }
 }
+
+.button-res{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid #3c67e3;
+    border-radius:10px;
+}
+
+.button-res:hover{
+    animation:pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 25px #5ddcff,
+                     0 0 50px #4e00c2;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---Media Queries --*/
