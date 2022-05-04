@@ -74,12 +74,18 @@ body{
     }
 }
 
+#carouselSlide{
+    text-align: center;
+}
 
 
+#symbols{
+    text-align: center;
+}
 
-
-
-
+#info-two-column{
+    text-align: center;
+}
 
 
 
