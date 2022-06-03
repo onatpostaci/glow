@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+
 /*BURGER BUTTON FIRST NOT DISPLAYED*/
 #navbarContainer button{
     display: none;
@@ -30,6 +31,10 @@
         color:white;
     }
 
+}
+
+#card-no1, #card-no2, #card-no3{
+    background: #343A40;
 }
 
 /*BODY WILL HAVE GRADIENT BACKGROUND ANIMATION*/
@@ -86,6 +91,9 @@ body{
 #info-two-column{
     text-align: center;
 }
+
+
+
 
 
 
