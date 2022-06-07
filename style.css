@@ -177,10 +177,96 @@ body{
 }
 
 
+/***************LOGIN HTML SIGN IN DIV**************/
+.sign-in-parent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -37.5%);
+    width: 700px;
+    height: 400px;
+    display: inline-block;
+    text-decoration: none;
+    padding:3px;
+    border-radius: 6px;
+    overflow: hidden;
+    color: #343A40;
+    /*animation: animate_border .75s linear infinite;*/
+}
+.sign-in-parent::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background:
+    linear-gradient(115deg,
+    #4fcf70, #fad648,
+    #a767e5, #12bcfe,
+    #44ce7b);
+    background-size: 50% 100%;
+    border-radius: inherit;
+    animation: animate_border .75s linear infinite;
+}
 
+.sign-in-child{
+    background-color: #343A40;
+    display: block;
+    padding: 13px 20px;
+    border:solid 1px;
+    position: relative;
+    z-index: z;
+    width: 98%;
+    height: 97%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.input-group{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -380%);
+    margin-bottom: 30px;
+}
 
+.input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    color:#fff;
+    background-color: transparent;
+    outline: 2px solid #fff;
+    width: 100%;
+}
 
+.input-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+    color: #fff;
+}
+
+.input:focus+.input-label,
+.input:valid+.input-label{
+    transform: 
+    translate(10px, -14px) scale(.8);
+    color: #EF6BBB;
+    padding-inline: 5px;
+    background-color: #343A40;
+}
+
+.input:is(:focus, :valid){
+    outline-color: #EF6BBB;
+}
+
+/***************LOGIN HTML SIGN IN DIV**************/
 
 
 /*---Media Queries --*/
